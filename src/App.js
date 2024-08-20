@@ -21,7 +21,7 @@ function App() {
         {web3 && account && (
           <>
             <div className="card">
-              <TokenWatchList walletAddress="0x3997508200C21924c91e1C723A69816324f7B8b4" />
+              <TokenWatchList walletAddress={account} />
               <WalletBalance web3={web3} account={account} />
             </div>
             <div className="card">
