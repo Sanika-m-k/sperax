@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #080f26; /* Dark blue background */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme Styles */
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #BDE0FE;
+  --secondary-color: #FFC8DD;
+  --card-background: #FFFFFF;
+  --card-border: #FFAACC;
+}
+
+.light-theme .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.light-theme .card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+  --background-color: #0D1B2A;
+  --text-color: #E0E1DD;
+  --primary-color: #415A77;
+  --secondary-color: #778DA9;
+  --card-background: #1B263B;
+  --card-border: #415A77;
+}
+
+.dark-theme .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.dark-theme .card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding:10px;
+    margin-top: 20px;
+  }
+
+  .card {
+    margin: 5px 0;
+  }
+}
